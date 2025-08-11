@@ -70,7 +70,7 @@ object GhostBlocks : Module(
     private val speed by NumberSetting("Swap back speed", 2, 1, 5, desc = "Delay between swapping back.", unit = " ticks").withDependency { swapStonk &&  swapStonkDropDown}
     private val swapStonkKey by KeybindSetting("Swap Stonk Keybind", Keyboard.KEY_NONE, "Press to perform a swap stonk.")
         .onPress {
-            if (!enabled || !swapStonk) return@onPress
+            if (!enabled) return@onPress
             val slot = getItemSlot(if (pickaxe == 1) "Stonk" else "Pickaxe", true) ?: return@onPress
             if (slot !in 0..8) return@onPress modMessage("Couldn't find pickaxe.")
             val originalItem = mc.thePlayer?.inventory?.currentItem ?: 0
@@ -303,6 +303,69 @@ object GhostBlocks : Module(
             BlockPos(54, 63, 73),
             BlockPos(54, 64, 74),
             BlockPos(54, 63, 74)
+        ),
+        5 to arrayOf(
+            BlockPos(58, 123, 122),
+            BlockPos(58, 124, 117),
+            BlockPos(58, 123, 117),
+            BlockPos(58, 122, 117),
+            BlockPos(58, 124, 118),
+            BlockPos(58, 123, 118),
+            BlockPos(58, 124, 119),
+            BlockPos(58, 123, 119),
+            BlockPos(58, 124, 120),
+            BlockPos(58, 123, 120),
+            BlockPos(58, 124, 121),
+            BlockPos(58, 123, 121),
+            BlockPos(59, 123, 122)
+        ),
+        6 to arrayOf(
+            BlockPos(57, 115, 53),
+            BlockPos(57, 116, 53),
+            BlockPos(58, 115, 53),
+            BlockPos(58, 116, 53),
+            BlockPos(59, 116, 53),
+            BlockPos(59, 116, 53),
+            BlockPos(59, 115, 52),
+            BlockPos(59, 116, 52),
+            BlockPos(59, 116, 53),
+            BlockPos(58, 115, 52),
+            BlockPos(58, 116, 52),
+            BlockPos(59, 115, 57),
+            BlockPos(59, 116, 57),
+            BlockPos(57, 115, 55),
+            BlockPos(57, 116, 55),
+            BlockPos(57, 115, 54),
+            BlockPos(57, 116, 54),
+            BlockPos(57, 115, 53),
+            BlockPos(57, 116, 53),
+            BlockPos(57, 115, 54),
+            BlockPos(57, 116, 54),
+            BlockPos(59, 115, 56),
+            BlockPos(59, 116, 56),
+            BlockPos(59, 115, 55),
+            BlockPos(59, 116, 55),
+            BlockPos(59, 115, 54),
+            BlockPos(59, 116, 54),
+            BlockPos(58, 115, 54),
+            BlockPos(58, 115, 54),
+            BlockPos(58, 115, 55),
+            BlockPos(58, 116, 55)
+        ),
+        7 to arrayOf(
+            BlockPos(96, 120, 122),
+            BlockPos(96, 121, 122),
+            BlockPos(96, 120, 123),
+            BlockPos(96, 121, 123)
         )
     )
+    private val rail = mapOf(
+        1 to arrayOf(
+            BlockPos(66, 106, 136),
+            BlockPos(67, 106, 136),
+            BlockPos(67, 106, 137),
+            BlockPos(66, 106, 137)
+        )
+    )
+    
 }
