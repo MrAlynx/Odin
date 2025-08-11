@@ -302,9 +302,7 @@ object GhostBlocks : Module(
             BlockPos(54, 64, 73),
             BlockPos(54, 63, 73),
             BlockPos(54, 64, 74),
-            BlockPos(54, 63, 74)
-        ),
-        5 to arrayOf(
+            BlockPos(54, 63, 74),
             BlockPos(58, 123, 122),
             BlockPos(58, 124, 117),
             BlockPos(58, 123, 117),
@@ -317,9 +315,7 @@ object GhostBlocks : Module(
             BlockPos(58, 123, 120),
             BlockPos(58, 124, 121),
             BlockPos(58, 123, 121),
-            BlockPos(59, 123, 122)
-        ),
-        6 to arrayOf(
+            BlockPos(59, 123, 122),
             BlockPos(57, 115, 53),
             BlockPos(57, 116, 53),
             BlockPos(58, 115, 53),
@@ -350,9 +346,7 @@ object GhostBlocks : Module(
             BlockPos(58, 115, 54),
             BlockPos(58, 115, 54),
             BlockPos(58, 115, 55),
-            BlockPos(58, 116, 55)
-        ),
-        7 to arrayOf(
+            BlockPos(58, 116, 55),
             BlockPos(96, 120, 122),
             BlockPos(96, 121, 122),
             BlockPos(96, 120, 123),
